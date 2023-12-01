@@ -1,0 +1,168 @@
+/*-----------------
+	1. General
+-----------------------*/
+
+:root {
+  --white: #fff;
+  --inter: "Inter", sans-serif;
+  --green: #18b588;
+  --section-bg: #111212;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-Bold.ttf) format("truetype");
+}
+/* 
+@font-face {
+  font-family: "Carena";
+  src: url(/assets/fonts/carena/Carena-Regular.otf) format("opentype");
+} */
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+  color: #fff;
+  background: #1e1e1e;
+  /* overflow-x: hidden;
+  height: 100%; */
+  width: 595px;
+  height: 476px;
+  margin: auto;
+}
+
+/* body {
+  width: 8.27in;
+  height: 11.69in;
+  margin: 1cm;
+  box-sizing: border-box;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.title-outfit {
+  font-family: var(--inter);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title {
+  color: var(--white);
+  font-size: 64px;
+}
+
+.mini-title {
+  color: var(--green);
+  font-size: 24px;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--button-common);
+  text-decoration: none;
+}
+
+.btn-common:hover,
+.btn-common:focus,
+.btn-common:active {
+  color: #fff;
+  box-shadow: none;
+}
+
+.flex-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.border-b {
+  border-bottom: 1px solid #000;
+}
+
+.border-l {
+  border-left: 1px solid #000;
+}
+
+.border-r {
+  border-right: 1px solid #000;
+}
+
+.border-t {
+  border-top: 1px solid #000;
+}
+
+.rm-pd {
+  padding: 0;
+}
+
+.add-space {
+  padding: 50px;
+}
+
+.add-space-30 {
+  padding: 30px;
+}
+
+.add-space-100 {
+  padding: 100px 50px 50px 50px;
+}
+
+.add-space-23 {
+  padding: 23px 21px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.hero-image-container {
+  background: var(--section-bg);
+}
+
+.content-wrapper {
+  padding: 58px 43px 49px 43px;
+}
+
+.screen-1 .mini-title-container {
+  margin: 10px 0 17px 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 595px;
+    height: 476px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
